@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<script>
+let a;
+
+for(a=1;a<=100;a++){
+    if(a % 3 === 0 && a%5!==0){
+        document.write("fizz, ")
+        continue;
+    }
+    if(a % 5 === 0 &&a%3!==0){
+        document.write("buzz, ")
+        continue
+    }
+    if(a % 5=== 0 && a% 3 ===0) {
+        document.write('fizzbuzz, ');
+        continue
+    }
+    document.write(a+', ');
+}
+
+
+</script>
+</body>
+</html>

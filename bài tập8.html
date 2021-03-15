@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" id="game" value="chơi" onclick="doanSo()"> chơi</button>
+</body>
+</html>
+<script>
+    function doanSo( ) {
+        let n = prompt("nhập số bạn muốn đoán trong khoảng", '');
+
+        var c = Math.floor(Math.random() * n);
+
+
+        for (let i = 0; i <=3; i++) {
+            let b = parseInt(prompt("nhập số bạn muốn đự đoán"));
+            if (b === c) {
+                alert('chúng mừng bạn đã đoán trúng');
+                break;
+            }
+            if ( b < c) {
+                alert("bạn cần chọn số lớn hơn", '');
+            }else if (b > c) {
+                alert("bạn cần chọn số nhỏ hơn");
+
+            }
+
+            
+
+        }
+
+
+    }
+</script>
